@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.todosContainer{
+    background: #232d48;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-y: scroll ;
+    scrollbar-width: none;
+}
+
+.todosContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.todosContainer h1{
+    color: white;
+}
+
+#p5{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+#img5{
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.todo{
+    background-color: #182137;
+    border: 1px solid #315080;
+    width: 75%;
+    height: 70px;
+    margin: 20px 0px 15px 50px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+
+.todoIcon{
+    width: 6.5%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    left: 2%;
+    transition: .5s ease-in;
+}
+
+.todoIcon img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.todoName{
+    width: 90%;
+    height: 100%;
+    color: white;
+    position: relative;
+    transition: .5s;
+}
+
+.todoName h2{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.todoStatus{
+    width: 9.7%;
+    height: 100%;
+    position: absolute;
+    color: #1e6f5c;
+    transition: .5s ease-in;
+}
+
+.cross{
+    color: #fa1e0e;
+}
+
+/* .todo:hover .todoStatus{
+    width: 100%;
+} */
+
+/* .todo:hover .todoName{
+    opacity: 0;
+} */
+
+/* .todo:hover .todoIcon{
+    left: 90%;
+} */

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.extracurrContainer{
+    background: #232d48;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    scrollbar-width: none;
+    padding: 25px;
+    overflow: hidden;
+}
+
+
+.extracurrContainer h1{
+    color: white;
+}
+
+
+#p3{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+#img3{
+    opacity: 0;
+    transition: .5s;
+}
+
+#badge-details{
+    width: 100%;
+    height: 60px;
+    margin-left: 3%;
+    display: flex;
+}
+
+.bdg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.bdg h2{
+    padding: 15px;
+    color: white;
+}
+
+
+.badge-image{
+    width: 20%;
+    height: 100%;
+}
+
+#certifications{
+    width: 78%;
+    height: 100%;
+    border: 1px solid var(--border);
+}
+
+#certificates{
+    width: 100%;
+    height: 200vh;
+    overflow-y: scroll;
+}

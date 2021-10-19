@@ -1,0 +1,122 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    color: rgb(41, 176, 238);
+    text-decoration: none;
+}
+
+.projectContainer{
+    background: #232d48;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.projectContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.projectContainer h1{
+    color: white;
+}
+
+
+#p4{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+#img4{
+    opacity: 0;
+    transition: .5s;
+}
+
+/* Projects container START */
+
+.prj{
+    background: #182137;
+    border: 1px solid #315080;
+    width: 75%;
+    height: 80px;
+    margin: 20px 0px 10px 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: .6s;
+}
+
+
+.projectIcon{
+    width: 10%;
+    height: 80px;
+    padding: 5px;
+}
+
+.projectIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.projectName{
+    width: 80%;
+    height: 80px;
+    position: relative;
+}
+
+.projectName h2{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8%;
+}
+
+.projectArrow{
+    cursor: pointer;
+    width: 8%;
+    height: 80px;
+    position: relative;
+    transform: rotate(-90deg);
+    transition: .6s;
+}
+
+.projectArrow img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectContent{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    color: #f05945;
+    font-size: 1.3vw;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+
+.projectContent span{
+    color: #ffcc29;
+}
+
+/* Projects container END */

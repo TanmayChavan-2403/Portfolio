@@ -1,0 +1,176 @@
+#p1{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+#img1{
+    opacity: 0;
+    transition: .5s;
+}
+
+.intro{
+    background: #232d48;
+    color: #ffcc29;
+}
+
+.container{
+    background: #232d48;
+    position: absolute;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.introduction{
+    border: 1px solid var(--border);
+    width: 70%;
+    position: relative;
+    margin: 40px 0px 40px 50px;
+    padding: 10px 20px 10px 20px;
+    color: #ffcc29;
+    font-size: 20px;
+    /* font-family: 'Rubik', sans-serif; */
+    background-color: #182137;
+}
+
+.introduction span{
+    font-weight: bold;
+    color: #f05945;
+}
+
+/* Language container START */
+
+
+.language{
+    background: #182137;
+    border: 1px solid var(--border);
+    width: 70%;
+    height: 125px;
+    position: relative;
+    margin: 0px 0px 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.language p{
+    color: var(--font);
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+
+.langIcon{
+    background-color: #182137;
+    width:  25px;
+    height: 25px;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.langIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+svg{
+    width: 150px;
+}
+
+.percent{
+    position: absolute;
+    right: 25px;
+    top: 1px;
+}
+
+.percent h1{
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    color: white;
+    font-size: 40px;
+}
+
+.percent span{
+    font-size: 22px;
+}
+
+.percent svg circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke: black;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 345;
+    stroke-dashoffset: 345;
+    stroke-linecap: round;
+}
+
+.percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #b3b2b2;
+}
+
+.percent svg circle:nth-child(2) {
+    stroke-dashoffset: 70;
+    stroke: #8ac50a;
+}
+
+.clang svg circle:nth-child(2){
+    stroke-dashoffset: 330;
+    stroke: #ce1212;
+}
+
+.clang h1{
+    right: 65px;
+}
+
+.js  svg circle:nth-child(2){
+    stroke-dashoffset: 90;
+    stroke: #ffcc29;
+}
+
+.ht  svg circle:nth-child(2){
+    stroke-dashoffset: 60;
+}
+
+.cs  svg circle:nth-child(2){
+    stroke-dashoffset: 60;
+}
+
+.sql svg circle:nth-child(2){
+    stroke-dashoffset: 180;
+    stroke: #d97642;
+}
+
+.github svg circle:nth-child(2){
+    stroke-dashoffset: 290;
+    stroke: #d97642;
+}
+
+.react svg circle:nth-child(2){
+    stroke-dashoffset: 140;
+    stroke: #ffcc29;
+}
+
+.flask svg circle:nth-child(2){
+    stroke-dashoffset: 160;
+    stroke: #ffcc29;
+}
+
+
+/* Language container END */
+
+
