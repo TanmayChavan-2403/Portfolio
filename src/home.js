@@ -5,6 +5,7 @@ import Hobbies from './routes/hobbies.js';
 import Projects from './routes/projects.js';
 import Todos from './routes/todos.js';
 import Extracurr from './routes/extracurr.js'
+import Contact from './routes/contact.js'
 
 class Home extends Component {
     constructor(props) {
@@ -57,21 +58,26 @@ class Home extends Component {
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&family=Source+Sans+Pro&display=swap" rel="stylesheet"></link>
 
                 <div className='name'>
-                    <h1> TANMAY  <span> CHAVAN </span> </h1>
-                    <p> <i> &lt; Full Stack Developer / &gt; </i> </p>
+                    <h1> TANMAY  <span> CHAVAN </span> 
+                        <sub> <i> &lt; Full Stack Developer / &gt; </i> </sub>
+                    </h1>
                 </div>
+               
                 <div className='profilePic'>
                     <img src='images/photo.png'></img>
                 </div>
+                
                 <div className='navbar'>
                     <div className='intro nav' onClick={() => this.display(1, 'intro')} >  <h2> Introduction </h2>  </div>
                     <div className='hobbies nav' onClick={() => this.display(2, 'hobbies')}> <h2> Hobbies </h2>  </div>
                     <div className='extracurr nav' onClick={() => this.display(3, 'extracurr')}> <h2> Certifications </h2> </div>
                     <div className='projects nav' onClick={() => this.display(4, 'projects')}><h2> Projects </h2></div>
                     <div className='todos nav' onClick={() => this.display(5, 'todos')}><h2> Todo's </h2></div>
-
+                    <div className='contact nav' onClick={() => this.display(6, 'contact')}><h2> Contact </h2></div>
                 </div>
+
                 <div className='content'>
+                    {/* Page 1 container */}
                     <div className='pages' id='p1'>
                         {<Intro> </Intro>}
                     </div>
@@ -79,6 +85,7 @@ class Home extends Component {
                         <img src='images/introImage.png' ></img>
                     </div>
 
+                    {/* Page 2 container */}
                     <div className='pages' id='p2' >
                         {<Hobbies> </Hobbies>}
                     </div>
@@ -86,6 +93,7 @@ class Home extends Component {
                         <img src='images/hobby.png' ></img>
                     </div>
 
+                    {/* Page 4 container */}
                     <div className='pages' id='p4' >
                         {<Projects> </Projects>}
                     </div>
@@ -93,6 +101,8 @@ class Home extends Component {
                         <img src='images/project.png' ></img>
                     </div>
 
+
+                    {/* Page 5 container */}
                     <div className='pages' id='p5' >
                         {<Todos> </Todos>}
                     </div>
@@ -100,6 +110,8 @@ class Home extends Component {
                         <img src='images/todo.png' ></img>
                     </div>
 
+
+                    {/* Page 3 container */}
                     <div className='pages' id='p3' >
                         {<Extracurr> </Extracurr>}
                     </div>
@@ -107,10 +119,16 @@ class Home extends Component {
                         <img src='images/certification.png' ></img>
                     </div>
 
+
+                    {/* Page 6 container */}
+                    <div className='pages' id='p6'>
+                        {<Contact> </Contact>}
+                    </div>
+                    <div className='content-image' id='img6'>
+                        <img src='images/contact.png' ></img>
+                    </div>
+
                 </div>
-
-
-
 
                 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 

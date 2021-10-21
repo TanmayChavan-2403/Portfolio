@@ -30,9 +30,10 @@
 
 .introduction{
     border: 1px solid var(--border);
-    width: 70%;
+    width: 82%;
     position: relative;
-    margin: 40px 0px 40px 50px;
+    /* margin: 40px 0px 40px 50px; */
+    margin: 40px auto;
     padding: 10px 20px 10px 20px;
     color: #ffcc29;
     font-size: 20px;
@@ -45,132 +46,100 @@
     color: #f05945;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Language container START */
 
+#skills{
+    width: 82%;
+    height: fit-content;
+    /* background-color: #182137; */
+    border: 1px solid var(--border);
+    margin: auto auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
 
 .language{
-    background: #182137;
-    border: 1px solid var(--border);
-    width: 70%;
-    height: 125px;
-    position: relative;
-    margin: 0px 0px 25px 50px;
+    width: 100%;
+    height: 90px;
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    background-color: #182137;
+}
+
+.langIcon{
+    width: 13%;
+    height: 100%;
+    padding: 29px 0px 29px 50px;
 }
 
 .language p{
-    color: var(--font);
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10%;
-}
-
-
-.langIcon{
-    background-color: #182137;
-    width:  25px;
-    height: 25px;
-    position: absolute;
-    left: 6%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.langIcon img{
-    width: 100%;
+    width: 70%;
     height: 100%;
-}
-
-svg{
-    width: 150px;
+    font-size: 2vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px ;
 }
 
 .percent{
+    width: 13%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.percent h2{
     position: absolute;
-    right: 25px;
-    top: 1px;
-}
-
-.percent h1{
-    position: absolute;
-    top: 30px;
-    right: 55px;
-    color: white;
-    font-size: 40px;
-}
-
-.percent span{
-    font-size: 22px;
-}
-
-.percent svg circle{
-    fill: none;
-    stroke-width: 8px;
-    stroke: black;
-    transform: translate(5px, 5px);
-    stroke-dasharray: 345;
-    stroke-dashoffset: 345;
-    stroke-linecap: round;
-}
-
-.percent svg circle:nth-child(1) {
-    stroke-dashoffset: 0;
-    stroke: #b3b2b2;
-}
-
-.percent svg circle:nth-child(2) {
-    stroke-dashoffset: 70;
-    stroke: #8ac50a;
-}
-
-.clang svg circle:nth-child(2){
-    stroke-dashoffset: 330;
-    stroke: #ce1212;
-}
-
-.clang h1{
-    right: 65px;
-}
-
-.js  svg circle:nth-child(2){
-    stroke-dashoffset: 90;
-    stroke: #ffcc29;
-}
-
-.ht  svg circle:nth-child(2){
-    stroke-dashoffset: 60;
-}
-
-.cs  svg circle:nth-child(2){
-    stroke-dashoffset: 60;
-}
-
-.sql svg circle:nth-child(2){
-    stroke-dashoffset: 180;
-    stroke: #d97642;
-}
-
-.github svg circle:nth-child(2){
-    stroke-dashoffset: 290;
-    stroke: #d97642;
-}
-
-.react svg circle:nth-child(2){
-    stroke-dashoffset: 140;
-    stroke: #ffcc29;
-}
-
-.flask svg circle:nth-child(2){
-    stroke-dashoffset: 160;
-    stroke: #ffcc29;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
 }
 
 
-/* Language container END */
+.percent h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #03a9f4 ;
+}
+
+.percent h2:nth-child(2){
+    color: #03a9f4;
+    animation: wave 10s linear infinite;
+    -webkit-animation:  wave 10s linear infinite;
+}
+
+@keyframes wave{
+    0%{
+        clip-path: polygon(0% 49%, 15% 48%, 29% 53%, 38% 60%, 53% 64%, 71% 66%, 89% 66%, 99% 63%, 99% 99%, 1% 99%);
+    }
+    50%{
+        clip-path: polygon(100% 46%, 88% 46%, 72% 50%, 59% 55%, 46% 63%, 32% 64%, 18% 63%, 5% 59%, 0% 55%, 1% 100%, 99% 100%);
+    }
+    100%{
+        clip-path: polygon(0% 49%, 15% 48%, 29% 53%, 38% 60%, 53% 64%, 71% 66%, 89% 66%, 99% 63%, 99% 99%, 1% 99%);
+    }
+}
 
 

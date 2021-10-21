@@ -194,8 +194,60 @@ class Projects extends Component {
                                 <br></br>
                                 Customer login also have a pannel in user settings with all necessary features like updating username, password, email, avatar,
                                 address. It also includes order history list which keeps track of orders along with time and date. In this project I have tried 
-                                to improve my CSS and JS skills and also got hands on experience on how to host websites on firebase and github. <a href='' target="_blank">Here is link
+                                to improve my CSS and JS skills and also got hands on experience on how to host websites on firebase and github. <a href='https://tanmaychavan-2403.github.io/super-mart.github.io/' target="_blank">Here is link
                                 of website. </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='REST-API prj upcomingprj'>
+                        <div className='projectIcon'>
+                            <img src='images/nodejs.svg'></img>
+                        </div>
+                        <div className='projectName'>
+                            <h2> Rest API  [ UPCOMING... ] </h2>
+                        </div>
+                        <div className='projectArrow' onClick={() => this.toggleContainer('6', 150)}>
+                            <img src='images/dirArrow.png'></img>
+                        </div>
+                        <div className='projectContent'>
+                            <p>
+                                Upcoming project, will be updated when project is completed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='Resume-Builder prj upcomingprj'>
+                        <div className='projectIcon'>
+                            <img src='images/null.png'></img>
+                        </div>
+                        <div className='projectName'>
+                            <h2> Resume Builder  [ UPCOMING... ] </h2>
+                        </div>
+                        <div className='projectArrow' onClick={() => this.toggleContainer('7', 150)}>
+                            <img src='images/dirArrow.png'></img>
+                        </div>
+                        <div className='projectContent'>
+                            <p>
+                                Upcoming project, will be updated when project is completed
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className='Login-Game prj upcomingprj'>
+                        <div className='projectIcon'>
+                            <img src='images/null.png'></img>
+                        </div>
+                        <div className='projectName'>
+                            <h2> Logic Game for Programmers  [ UPCOMING... ] </h2>
+                        </div>
+                        <div className='projectArrow' onClick={() => this.toggleContainer('8', 150)}>
+                            <img src='images/dirArrow.png'></img>
+                        </div>
+                        <div className='projectContent'>
+                            <p>
+                                Upcoming project, will be updated when project is completed
                             </p>
                         </div>
                     </div>

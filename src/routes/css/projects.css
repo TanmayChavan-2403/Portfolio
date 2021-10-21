@@ -31,7 +31,6 @@ a{
     color: white;
 }
 
-
 #p4{
     visibility: hidden;
     opacity: 0;
@@ -49,7 +48,7 @@ a{
 .prj{
     background: #182137;
     border: 1px solid #315080;
-    width: 75%;
+    width: 82%;
     height: 80px;
     margin: 20px 0px 10px 50px;
     position: relative;
@@ -59,6 +58,14 @@ a{
     transition: .6s;
 }
 
+.upcomingprj .projectName h2{
+    color: grey    
+}
+
+
+.upcomingprj .projectContent p{
+    color: grey;
+}
 
 .projectIcon{
     width: 10%;

@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    list-style: none;
+    color: #ffcc29;
+}
+
+
+/* Base container start */
+
+#contact-container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #232d48;
+    scrollbar-width: none;
+    padding: 20px;
+    transition: .5s;
+}
+
+#contact-container::-webkit-scrollbar{
+    display: none;
+}
+
+#contact-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Base container end */
+
+
+
+
+
+
+
+
+
+/* Details container start */
+
+
+#details{
+    width: 80%;
+    height: 98%;
+    display: flex;
+}
+
+#contact-details{
+    width: 50%;
+    height: 100%;
+}
+
+#socialMedia-details{
+    width: 50%;
+    height: 100%;
+}
+
+.heading{
+    width: 100%;
+    height: 17%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: #ffcc29;
+    text-align: center;
+}
+
+#socialMedia-details .heading{
+    color: #ff6347;
+}
+
+.detail-section{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y:scroll;
+    scrollbar-width: none;
+}
+
+.detail-section::-webkit-scrollbar{
+    display: none;
+}
+.detail-section{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.block{
+    width: 90%;
+    height: 20%;
+    display: flex;
+}
+
+.img-block{
+    width: 18%;
+    height: 100%;
+    padding: 13px;
+}
+
+.img-block img{
+    object-fit: contain;
+}
+
+.content-block{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffcc29;
+}
+
+
+/* Details container end */
+
