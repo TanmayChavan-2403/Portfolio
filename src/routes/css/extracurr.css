@@ -16,7 +16,7 @@ img{
     height: 100%;
     position: absolute;
     scrollbar-width: none;
-    padding: 25px;
+    padding: 25px 0px;
     overflow: hidden;
 }
 
@@ -62,8 +62,9 @@ img{
 }
 
 #certifications{
-    width: 87%;
+    width: 90%;
     height: 100%;
+    margin: auto auto;
     border: 1px solid var(--border);
 }
 

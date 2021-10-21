@@ -15,19 +15,66 @@
 body, html{
     height: 100vh;
     width: 100%;
-    background: rgb(255,204,41);
-    background: linear-gradient(48deg, rgba(255,204,41,1) 0%, rgba(255,99,71,1) 96%);
+    background: rgb(255,148,114);
+    background: linear-gradient(209deg, rgba(255,148,114,1) 0%, rgba(242,113,155,1) 100%); 
     /* animation: changeColor 20s infinite linear; */
-
 }
 
-.name{
-    left: 30px;
+#portfolio-main-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Left container start  */
+
+#left-container{
     width: 67%;
-    height: 100px;
-    color: vaR(--font);
-    font-size: 25px;
+    height: 91vh;
     position: relative;
+}
+
+#header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#name{
+    width: 87%;
+    height: 100%;
+    color: vaR(--font);
+    font-size: 3vw;
+    padding: 15px;
+}
+
+#name span{
+    color: tomato;
+}
+
+#profilePic{
+    width: 14%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profilePic img{
+    object-fit: cover;
 }
 
 sub{
@@ -36,44 +83,22 @@ sub{
     font-weight: bold;
 }
 
-.name span{
-    color: tomato;
 
+
+#footer{
+    width: 100%;
+    height: 80%;
 }
-
-.profilePic{
-    position: absolute;
-    top: 10px;
-    right: 35px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50% ;
-    overflow: hidden;
-}
-
-.profilePic img{
-    object-fit: cover;
-}
-
-/* Navbar container START */
 
 .navbar{
-    /* background: #152644; */
-    /* background: #143959; */
-    width: 70%;
-    height: 70px;
+    width: 100%;
+    height: 15%;
     display: flex;
     color: var(--font);
-    position: relative;
-    top: 20px;
-    left: 25px;
 }
-
-
 
 .nav{
     cursor: pointer;
-    /* background: #143959; */
     width: 33.33%;
     height: 100%;
     text-align: center;
@@ -86,46 +111,137 @@ sub{
     background: #0d192c;
 }
 
-/* Navbar container END */
-
-/* Content containre START */
-
 .content{
-    /* border: 1px solid #143959; */
-    border-top: none;
-    width: 70%;
-    height: 400px;
-    position: relative;
-    left: 25px;
-    top: 20px;
-}
-
-.content-image{
-    width: 55%;
-    height:100%;
-    position: absolute;
-    right: -350px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-}
-
-.content-image img{
     width: 100%;
-    height: inherit;
-    object-fit: contain;
+    height: 85%;
 }
+
 
 .pages{
     /* border: 1px solid #19355f; */
     width: 100%;
-    height: inherit;
+    height: 68%;
     position: absolute;
     visibility: hidden;
     opacity: 0;
 }
 
-/* Content containre END */
+
+/* Left container end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right container start  */
+
+#right-container{
+    width: 33%;
+    height: 91vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#right-container img{
+    object-fit: cover;
+}
+
+#slider{
+    width: 700%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    animation: slider 40s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.slider-cont{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font: 30px;
+    float: left;
+}
+
+.slider-cont:nth-child(1){
+    background-color: red;   
+}
+.slider-cont:nth-child(2){
+    background-color: green;   
+}
+
+
+/* Right container end  */
+
+
+
+@keyframes slider{
+    0%{
+        left: 0%;        
+    }
+    13%{
+        left: 0%;
+    }
+    14%{
+        left: -100%;
+    }
+    26%{
+        left: -100%;
+    }
+    27%{
+        left: -200%;
+    }
+    41%{
+        left: -200%;
+    }
+    42%{
+        left: -300%;
+    }
+    55%{
+        left: -300%;
+    }
+    56%{
+        left: -400%;
+    }
+    69%{
+        left: -400%;
+    }
+    70%{
+        left: -500%;
+    }
+    83%{
+        left: -500%;
+    }
+    84%{
+        left: -600%;
+    }
+    99%{
+        left: -600%;
+    }
+    100%{
+        left: -600%;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 

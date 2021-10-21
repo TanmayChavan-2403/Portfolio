@@ -17,10 +17,14 @@ a{
     background: #232d48;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     overflow-y: scroll;
     scrollbar-width: none;
-
 }
 
 .projectContainer::-webkit-scrollbar{
@@ -47,15 +51,14 @@ a{
 
 .prj{
     background: #182137;
-    border: 1px solid #315080;
     width: 82%;
     height: 80px;
-    margin: 20px 0px 10px 50px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     transition: .6s;
+    margin: 25px auto;
 }
 
 .upcomingprj .projectName h2{
