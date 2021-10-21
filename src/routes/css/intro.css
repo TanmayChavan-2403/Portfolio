@@ -73,9 +73,9 @@
     width: 82%;
     height: fit-content;
     /* background-color: #182137; */
-    border: 1px solid var(--border);
     margin: auto auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
@@ -100,7 +100,6 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 0px 15px ;
 }
 
 .percent{
@@ -116,30 +115,167 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3vw;
+    
 }
 
 
-.percent h2:nth-child(1){
+.python h2:nth-child(1){
     color: transparent;
     -webkit-text-stroke:2px #03a9f4 ;
 }
 
-.percent h2:nth-child(2){
+.python h2:nth-child(2){
     color: #03a9f4;
-    animation: wave 10s linear infinite;
-    -webkit-animation:  wave 10s linear infinite;
+    animation: intermediateWave 4s linear infinite;
 }
 
-@keyframes wave{
-    0%{
-        clip-path: polygon(0% 49%, 15% 48%, 29% 53%, 38% 60%, 53% 64%, 71% 66%, 89% 66%, 99% 63%, 99% 99%, 1% 99%);
+/* Javascript language percentage start */
+
+.javascript h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #7bd5ff ;
+}
+
+.javascript h2:nth-child(2){
+    color: #7bd5ff;
+    animation: intermediateWave 3s linear infinite;
+}
+
+/* Javascript language percentage start */
+
+
+/* html language percentage start */
+
+.html h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #0487c3 ;
+}
+
+.html h2:nth-child(2){
+    color: #0487c3;
+    animation: professional 3s linear infinite;
+}
+
+/* html language percentage start */
+
+/* MySQL language percentage start */
+
+.mysql h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px tomato;
+}
+
+.mysql h2:nth-child(2){
+    color: tomato;
+    animation: noviceWave 5s linear infinite;
+}
+
+/* MySQL language percentage start */
+
+/* Github language percentage start */
+
+.github h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px rgb(255, 147, 128);
+}
+
+.github h2:nth-child(2){
+    color: rgb(255, 147, 128);
+    animation: averageWave 5s linear infinite;
+}
+
+/* React language percentage start */
+
+
+.react h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #7bd5ff;
+}
+
+.react h2:nth-child(2){
+    color:#7bd5ff;
+    animation: intermediateWave 5s linear infinite;
+}
+
+/* Flask language percentage start */
+
+
+.flask h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #7bd5ff;
+}
+
+.flask h2:nth-child(2){
+    color: #7bd5ff;
+    animation: intermediateWave 5s linear infinite;
+    animation-delay: 2s;
+}
+
+/* Flask language percentage start */
+
+
+/* NodeJS language percentage start */
+
+
+.node h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px rgb(255, 59, 24);
+}
+
+.node h2:nth-child(2){
+    color: transparent;
+}
+
+/* NodeJS language percentage start */
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes start */
+
+
+@keyframes professional{
+    0%, 100%{
+        clip-path: polygon(1% 28%, 13% 26%, 25% 31%, 35% 35%, 44% 41%, 54% 45%, 69% 49%, 81% 48%, 89% 43%, 95% 37%, 100% 30%, 100% 99%, 1% 100%);
     }
     50%{
-        clip-path: polygon(100% 46%, 88% 46%, 72% 50%, 59% 55%, 46% 63%, 32% 64%, 18% 63%, 5% 59%, 0% 55%, 1% 100%, 99% 100%);
-    }
-    100%{
-        clip-path: polygon(0% 49%, 15% 48%, 29% 53%, 38% 60%, 53% 64%, 71% 66%, 89% 66%, 99% 63%, 99% 99%, 1% 99%);
+        clip-path: polygon(1% 28%, 14% 34%, 23% 39%, 35% 43%, 49% 44%, 60% 44%, 72% 40%, 82% 31%, 76% 35%, 91% 24%, 100% 25%, 100% 99%, 1% 100%);
     }
 }
 
+@keyframes intermediateWave{
+    0%, 100%{
+        clip-path: polygon(0% 35%, 11% 36%, 21% 39%, 36% 45%, 46% 50%, 55% 54%, 70% 58%, 87% 55%, 98% 49%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0 42%, 13% 48%, 24% 51%, 36% 56%, 51% 54%, 62% 47%, 72% 40%, 83% 37%, 100% 37%, 100% 100%, 1% 100%);
+    }
+}
 
+@keyframes averageWave{
+    0%, 100%{
+        clip-path: polygon(0 49%, 13% 48%, 26% 51%, 36% 55%, 46% 60%, 57% 60%, 70% 59%, 78% 57%, 89% 52%, 100% 50%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 49%, 11% 55%, 26% 59%, 35% 61%, 45% 61%, 56% 57%, 66% 54%, 78% 51%, 88% 48%, 100% 46%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes noviceWave{
+    0%, 100%{
+        clip-path: polygon(0% 63%, 12% 64%, 24% 68%, 30% 74%, 41% 82%, 56% 85%, 69% 84%, 79% 82%, 90% 78%, 100% 66%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 60%, 11% 66%, 22% 69%, 31% 71%, 41% 71%, 53% 68%, 66% 65%, 77% 61%, 90% 60%, 100% 60%, 100% 100%, 0 100%);
+    }
+
+} 
+
+/* Keyframes start */

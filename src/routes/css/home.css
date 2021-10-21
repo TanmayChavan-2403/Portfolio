@@ -17,7 +17,7 @@ body, html{
     width: 100%;
     background: rgb(255,204,41);
     background: linear-gradient(48deg, rgba(255,204,41,1) 0%, rgba(255,99,71,1) 96%);
-    animation: changeColor 20s infinite linear;
+    /* animation: changeColor 20s infinite linear; */
 
 }
 
@@ -31,7 +31,7 @@ body, html{
 }
 
 sub{
-    color: tomato;
+    color: #ff6347;
     font-size: 20px;
     font-weight: bold;
 }
@@ -151,7 +151,7 @@ sub{
 
 
 
-
+/* 
 
 @keyframes changeColor {
     0%{
@@ -187,4 +187,4 @@ sub{
     100%{
         background: linear-gradient(360, rgba(255,204,41,1) 0%, rgba(255,99,71,1) 96%);
     }
-}
+} */

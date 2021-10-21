@@ -29,150 +29,115 @@ class Intro extends Component{
                     </div>
 
                     <div id='skills'>
-                        <div className='python language'>
+
+                        <div className='language'>
                             <div className ='langIcon'>
                                 <img src='images/arrow.png'></img>
                             </div>
                             <p> Python  </p>
-                            <div className = 'percent py'>
+                            <div className = 'python percent'>
                                 <h2>82%</h2>
                                 <h2>82%</h2>
                             </div>
-
                         </div>
 
-                        {/* <div className='c language'>
-                            <p> C++  </p>
+                        <div className='language'>
                             <div className ='langIcon'>
                                 <img src='images/arrow.png'></img>
                             </div>
-
-                            <div className = 'percent clang'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1> 5<span>%</span> </h1>
-                            </div>
-                        </div>
-
-                        <div className='javascript language'>
                             <p> JavaScript  </p>
-                            <div className ='langIcon'>
-                                <img src='images/arrow.png'></img>
-                            </div>
-                            <div className = 'percent js'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1> 75<span>%</span> </h1>
+                            <div className = 'javascript percent'>
+                                <h2>60%</h2>
+                                <h2>60%</h2>
                             </div>
                         </div>
 
-                        <div className='html language'>
-                            <p> HTML  </p>
+                        <div className='language'>
                             <div className ='langIcon'>
                                 <img src='images/arrow.png'></img>
                             </div>
-                            <div className = 'percent ht'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1> 85<span>%</span> </h1>
-
+                            <p> HTML5  </p>
+                            <div className = 'html percent'>
+                                <h2>90%</h2>
+                                <h2>90%</h2>
                             </div>
                         </div>
 
-                        <div className='css language'>
+                        <div className='language'>
+                            <div className ='langIcon'>
+                                <img src='images/arrow.png'></img>
+                            </div>
                             <p> CSS  </p>
-                            <div className ='langIcon'>
-                                <img src='images/arrow.png'></img>
-                            </div>
-                            <div className = 'percent cs'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1> 85<span>%</span> </h1>
-
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'html percent'> 
+                                <h2>90%</h2>
+                                <h2 style={{animationDelay: '1s' }} >90%</h2>
+                                
                             </div>
                         </div>
 
-                        <div className='mysql language'>
+                        <div className='language'>
                             <div className ='langIcon'>
                                 <img src='images/arrow.png'></img>
                             </div>
-                            <p> MySql  </p>
-                            <div className = 'percent sql'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1>50<span>%</span> </h1>
-                            </div>
-
-                        </div>
-
-                        <div className='github language'>
-                            <div className ='langIcon'>
-                                <img src='images/arrow.png'></img>
-                            </div>
-                            <p> Github </p>
-                            <div className = 'percent github'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1>20<span>%</span> </h1>
-                            </div>
-
-                        </div>
-
-                        <div className='react language'>
-                            <div className ='langIcon'>
-                                <img src='images/arrow.png'></img>
-                            </div>
-                            <p> ReactJS </p>
-                            <div className = 'percent react'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1>65<span>%</span> </h1>
-                            </div>
-
-                        </div>
-
-                        <div className='flask language'>
-                            <div className ='langIcon'>
-                                <img src='images/arrow.png'></img>
-                            </div>
-                            <p> Flask </p>
-                            <div className = 'percent flask'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1>60<span>%</span> </h1>
+                            <p> MySQL  </p>
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'mysql percent'> 
+                                <h2>20%</h2>
+                                <h2>20%</h2>
                             </div>
                         </div>
 
-                        <div className='nodejs language'>
+                        <div className='language'>
                             <div className ='langIcon'>
                                 <img src='images/arrow.png'></img>
                             </div>
-                            <p> NodeJs </p>
-                            <div className = 'percent NodeJs'>
-                                <svg>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                    <circle cx='55' cy='55' r = '55' ></circle>
-                                </svg>
-                                <h1>01<span>%</span> </h1>
+                            <p> Github  </p>
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'github percent'> 
+                                <h2>40%</h2>
+                                <h2>40%</h2>
                             </div>
+                        </div>
 
-                        </div> */}
+                        <div className='language'>
+                            <div className ='langIcon'>
+                                <img src='images/arrow.png'></img>
+                            </div>
+                            <p> ReactJS  </p>
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'react percent'> 
+                                <h2>60%</h2>
+                                <h2>60%</h2>
+                            </div>
+                        </div>
+
+                        <div className='language'>
+                            <div className ='langIcon'>
+                                <img src='images/arrow.png'></img>
+                            </div>
+                            <p> Flask  </p>
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'flask percent'> 
+                                <h2>60%</h2>
+                                <h2>60%</h2>
+                            </div>
+                        </div>
+
+                        <div className='language'>
+                            <div className ='langIcon'>
+                                <img src='images/arrow.png'></img>
+                            </div>
+                            <p> NodeJS  </p>
+                            {/* I have kept class same as html becase it have exactly same properties */}
+                            <div className = 'node percent'> 
+                                <h2>00%</h2>
+                                <h2>00%</h2>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
