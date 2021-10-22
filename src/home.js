@@ -23,6 +23,20 @@ class Home extends Component {
             btnContainer: document.querySelector('.intro'),
             // containerImage: document.getElementById('img1'),
         })
+        const folder = 'demonSlayer';
+        const numOfImages = 16;
+        var currImage = 1;
+        // document.getElementsByTagName('body')[0].style.backgroundImage = "url('/images/rightContainer/demonSlayer/profile 1.png')";
+        setInterval(() => {
+            let imgContainer = document.getElementById('slideShow');
+            imgContainer.src = `/images/rightContainer/${folder}/profile ${currImage}.png`;
+            if (currImage == numOfImages){
+                currImage = 1
+            } else {
+                currImage += 1
+            }
+        }, 5000)
+        
     }
 
     display(id, btn) {
@@ -49,13 +63,14 @@ class Home extends Component {
         });
     }
 
+
     render() {
         return (
             <div id='portfolio-main-container'>
                 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" /> 
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&family=Source+Sans+Pro&display=swap" rel="stylesheet"></link>
-
+                
                 <section id='left-container'>
                     <section id ='header'>
                         <div id='name'>
@@ -136,19 +151,20 @@ class Home extends Component {
                 </section>
 
                 <section id='right-container'>
-                    <div id = 'slider'>
-                        <div class = 'slider-cont'><img src='images/rightContainer/profile1.jpg'></img></div>
+                    {/* <div id = 'slider'> */}
+                        {/* <div class = 'slider-cont'><img src='images/rightContainer/profile1.jpg'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile2.png'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile3.png'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile4.png'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile5.jpg'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile6.jpg'></img></div>
                         <div class = 'slider-cont'><img src='images/rightContainer/profile7.png'></img></div>
-                    </div>
+                        `images/rightContainer/${folder}/profile ${currImage}.png` */}
+                    {/* </div> */}
+                    <img src='/images/rightContainer/demonSlayer/profile 5.png' id='slideShow'></img>
                 </section>
 
                 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-
             </div>
         )
     }
