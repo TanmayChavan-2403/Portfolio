@@ -31,6 +31,13 @@ a{
     scrollbar-width: none;  /* Firefox */
 }
 
+#p6{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+
 /* Base container end */
 
 

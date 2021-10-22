@@ -15,22 +15,31 @@
 body, html{
     height: 100vh;
     width: 100%;
-    /* background-repeat: none;
-    background-size: 100vw 100vh; */
-    
-    background: rgb(255,148,114);
-    background: linear-gradient(209deg, rgba(255,148,114,1) 0%, rgba(242,113,155,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    /* background: rgb(255,148,114); */
+    /* background: linear-gradient(209deg, rgba(255,148,114,1) 0%, rgba(242,113,155,1) 100%); */
     /* animation: changeColor 20s infinite linear; */
 }
 
 #portfolio-main-container{
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 91vh;
+    margin: auto auto;
+    transform: translateY(5%);
+    backdrop-filter: blur(15px);
+    /* z-index: 2; */
 }
 
 
-
+#background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* background: #0d192c; */
+    backdrop-filter: blur(5px);
+}
 
 
 
@@ -55,6 +64,7 @@ body, html{
     width: 100%;
     height: 20%;
     display: flex;
+    background-color: #182137;
 }
 
 #name{
@@ -98,6 +108,7 @@ sub{
     height: 15%;
     display: flex;
     color: var(--font);
+    background-color: #182137;
 }
 
 .nav{
@@ -165,83 +176,10 @@ sub{
     transition: .2s;
 }
 
-/* #slider{
-    width: 700%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    animation: slider 40s ease-in-out infinite;
-    animation-direction: alternate;
-}
-
-.slider-cont{
-    width: 100%;
-    height: 100%;
-    color: white;
-    font: 30px;
-    float: left;
-}
-
-.slider-cont:nth-child(1){
-    background-color: red;   
-}
-.slider-cont:nth-child(2){
-    background-color: green;   
-}
- */
 
 /* Right container end  */
 
 
-
-/* @keyframes slider{
-    0%{
-        left: 0%;        
-    }
-    13%{
-        left: 0%;
-    }
-    14%{
-        left: -100%;
-    }
-    26%{
-        left: -100%;
-    }
-    27%{
-        left: -200%;
-    }
-    41%{
-        left: -200%;
-    }
-    42%{
-        left: -300%;
-    }
-    55%{
-        left: -300%;
-    }
-    56%{
-        left: -400%;
-    }
-    69%{
-        left: -400%;
-    }
-    70%{
-        left: -500%;
-    }
-    83%{
-        left: -500%;
-    }
-    84%{
-        left: -600%;
-    }
-    99%{
-        left: -600%;
-    }
-    100%{
-        left: -600%;
-    }
-
-} */
 
 
 
