@@ -59,15 +59,17 @@ a{
     width: 85%;
     height: 98%;
     display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 #contact-details{
-    width: 50%;
+    width: 48%;
     height: 100%;
 }
 
 #socialMedia-details{
-    width: 50%;
+    width: 48%;
     height: 100%;
 }
 
@@ -108,6 +110,7 @@ a{
     width: 90%;
     height: 20%;
     display: flex;
+    font-size: 1.2vw;
 }
 
 .img-block{
@@ -133,3 +136,62 @@ a{
 
 /* Details container end */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1000px){
+    #contact-details{
+        width: 100%;
+        height: 50%;
+        border: 1px solid tomato;
+    }
+
+
+    #socialMedia-details{
+        width: 100%;
+        height: 50%;
+        border: 1px solid tomato;
+    }
+
+    .heading{
+        font-size: 5.5vw;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .block{
+        font-size: 3.2vw;
+    }
+
+}
+
+
+
+
+
+
+/* Media Query */

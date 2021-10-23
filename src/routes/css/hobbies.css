@@ -46,11 +46,12 @@ font-family: 'Source Sans Pro', sans-serif; */
 .hobby{
     /* border: 1px solid var(--border); */
     width: 85%;
-    height: 23%;
+    height: fit-content;
     position: relative;
     background-color: #182137;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.1vw;
 }
 
 .hobbyIcon{
@@ -74,3 +75,20 @@ font-family: 'Source Sans Pro', sans-serif; */
     padding: 25px;
 }
 
+
+
+/* MEdia Query */
+
+@media screen and (max-width: 1000px){
+    .hobbyIcon{
+        width: 20%;
+    }
+
+    .hobbyName{
+        width: 80%;
+    }
+
+    .hobby{
+        font-size: 3vw;
+    }
+}

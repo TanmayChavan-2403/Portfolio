@@ -92,14 +92,22 @@
     color: #fa1e0e;
 }
 
-/* .todo:hover .todoStatus{
-    width: 100%;
-} */
 
-/* .todo:hover .todoName{
-    opacity: 0;
-} */
 
-/* .todo:hover .todoIcon{
-    left: 90%;
-} */
+
+
+/* Media Query */
+
+
+@media screen and (max-width: 1000px){
+
+    .todo{
+        height: 50px;
+    }
+
+    .todoName h2{
+        font-size: 3vw;
+    }
+}
+
+/* Media Query */

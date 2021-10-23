@@ -279,3 +279,75 @@
 } 
 
 /* Keyframes start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Media Query */
+@media screen and (max-width: 1000px){
+    .introduction{
+        font-size: 4vw;
+    }
+
+    .language{
+        height: 60px;
+    }
+
+    .language p{
+        width: 60%;
+        font-size: 3.5vw;
+    }
+
+    .langIcon{
+        width: 17%;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .langIcon img{
+        width: 60%;
+    }
+
+    .percent{
+        width: 23%;
+    }
+
+    .percent h2{
+        font-size: 6vw;
+    }
+
+}
+
+
+
+
+
+
+
+/*  Media Query */
