@@ -36,9 +36,10 @@ a{
 }
 
 #p4{
-    visibility: hidden;
-    opacity: 0;
     transition: .5s;
+    height: 100%;
+    position: relative;
+    display: none;
 }
 
 
@@ -88,11 +89,9 @@ a{
 }
 
 .projectName h2{
-    position: absolute;
     color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 8%;
+    display: flex;
+    padding: 25px 15px;
 }
 
 .projectArrow{
@@ -130,3 +129,32 @@ a{
 }
 
 /* Projects container END */
+
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1000px){
+    .projectContent{
+        font-size: 2.5vw;
+    }
+
+    .projectIcon img{
+        transform: translateY(-12%);
+    }
+
+    .projectName h2{
+        font-size: 3vw;
+        padding: 18px 10px;
+    }
+
+    .prj{
+        height: 6vh;
+    }
+}
+
+img{
+    object-fit: contain;
+}

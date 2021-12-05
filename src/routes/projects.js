@@ -7,6 +7,7 @@ class Projects extends Component {
         super(props)
         this.state = {
             toggled: [],
+            projectBarHeight: 80
         }
     }
 
@@ -14,10 +15,17 @@ class Projects extends Component {
         let arrow = document.querySelectorAll('.projectArrow')[id];
         let content = document.querySelectorAll('.prj')[id];
 
+        // Taking paragraph height to expand the content section
+        let paragraphHeight = document.getElementsByClassName('projectContent')[id].offsetHeight + 70;
+        console.log(paragraphHeight)
+
+        // Setting the projectBar height 
+        let tempHeightVal = document.getElementsByClassName('prj')[0].offsetHeight;
+        this.setState({projectBarHeight: tempHeightVal});
+        
         if (this.state.toggled.includes(id)) {
-            console.log(this.state.toggled);
             arrow.style.transform = 'rotate(-90deg)';
-            content.style.height = '80px';
+            content.style.height = `${this.state.projectBarHeight}px`;
             this.setState({
                 toggled: this.state.toggled.filter(element => {
                     return id !== element;
@@ -25,8 +33,7 @@ class Projects extends Component {
             })
         }
         else {
-            console.log('Its reaching here');
-            content.style.height = `${height}px`;
+            content.style.height = `${paragraphHeight}px`;
             arrow.style.transform = 'rotate(90deg)';
             this.setState({
                 toggled: [...this.state.toggled, id],

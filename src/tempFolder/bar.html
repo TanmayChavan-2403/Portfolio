@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bar.css">
+    <title>Temp</title>
+</head>
+<body>
+    
+    <div id="main-container">
+
+        <div id='project'>
+            <div id='top'>
+                <!-- <div class='icon'>
+                    <img src="images/mysql.svg" alt="MySql">
+                </div>
+                <div class="name">
+                    <p>Medical Billing Software</p>
+                </div>
+                <div class="arrow" onclick="toggle()" data-state='off'>
+                    <img src="images/dirArrow.png" alt="arrow">
+                </div> -->
+            </div>
+
+            <div id="bottom">
+                <!-- <p id='para'>
+                    File renamer is my second project base on Python & Tkinter  which can rename all the files,
+                    present in the browsed folder. My main motive behind creating this software was
+                    to get my hands on OS module, but later on as i kept adding functionality to this
+                    software it became a project.
+                    <br></br>
+                    <br></br>
+                    <span> I have created my own file browsing system </span> instead
+                    of using inbuilt functions. It consists of all basic fucntionality like navigation path
+                    on the top, Back and forward button error handling etc. It takes file name from user and bydefault
+                    it adds a incremental number in front of every renamed file.
+                    After renaming is done a dialogue box appears telling us which files is renamed by what name in order
+                    to confirm that file are renamed properly.
+                </p> -->
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggle(){
+            height = document.getElementById('para').offsetHeight + 50;
+
+            let paragraph = document.getElementById('bottom');
+            paragraph.style.position = 'relative';
+            if (document.getElementsByClassName('arrow')[0].getAttribute('data-state') == 'off'){
+                paragraph.style.height = `${height}px`;
+                paragraph.style.padding = '10px';
+                paragraph.style.opacity = '1';
+                document.getElementsByClassName('arrow')[0].setAttribute('data-state', 'on');
+            } else {
+                paragraph.style.height = '0px';
+                paragraph.style.padding = '0px';
+                paragraph.style.opacity = '0' ;
+                document.getElementsByClassName('arrow')[0].setAttribute('data-state', 'off');
+            }
+
+            
+        }
+    </script>
+
+</body>
+</html>
