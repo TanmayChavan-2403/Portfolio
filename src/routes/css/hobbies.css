@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; */
@@ -92,4 +93,114 @@ font-family: 'Source Sans Pro', sans-serif; */
     .hobby{
         font-size: 3vw;
     }
+=======
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.hobbiesContainer{
+    background: #232d48;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.hobbiesContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.hobbiesContainer h1{
+    color: white;
+}
+
+#p2{
+    transition: .5s;
+    position: relative;
+    display: none;
+    height: 100%;
+}
+
+#img2{
+    opacity: 0;
+    transition: .5s;
+}
+
+.hobby{
+    /* border: 1px solid var(--border); */
+    width: 85%;
+    height: 80px;
+    position: relative;
+    background-color: #182137;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1vw;
+}
+
+.hobbyIcon{
+    width: 10%;
+    height: 100%;
+}
+
+.hobbyIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.hobbyName{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(241, 241, 241);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+/* MEdia Query */
+
+@media screen and (max-width: 1000px){
+    .hobbyIcon{
+        width: 20%;
+    }
+
+    .hobbyName{
+        width: 80%;
+    }
+
+    .hobby{
+        font-size: 18px;
+        height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .hobby{
+        font-size: 12px;
+        height: 70px;
+    }
+
+    .hobbyIcon{
+        padding: 5px;
+    }
+>>>>>>> responsive-app
 }
