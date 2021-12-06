@@ -74,7 +74,7 @@ class Projects extends Component {
                         </div>
                     </div>
 
-                    <div className='fileRenamer prj' style={{height:'50px'}}>
+                    <div className='fileRenamer prj'>
                         <div className='projectIcon'>
                             <img src='images/programming.png'></img>
                         </div>

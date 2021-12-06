@@ -8,21 +8,16 @@ import Extracurr from './routes/extracurr.js'
 import Contact from './routes/contact.js'
 
 class Home extends Component {
+
     constructor(props) {
         super(props)
         this.state = {
             divContainer: null,
             btnContainer: null,
-            // containerImage: null,
         }
     };
 
-    manageDimention(){
-        // Setting size of content container
-        let navbarHeight = document.getElementById('navbar').offsetHeight
-        let footerHeight = document.getElementById('footer').offsetHeight
-        document.getElementById('content').style.height = `${footerHeight - navbarHeight}px`;
-    }
+    
 
     componentDidMount(){
 
@@ -39,7 +34,7 @@ class Home extends Component {
         const folder = 'demonSlayer';
         const numOfImages = 16;
         var currImage = 1;
-        setInterval(() => {
+        let slideShow = setInterval(() => {
             let imgContainer = document.getElementById('slideShow');
             imgContainer.src = `/images/rightContainer/${folder}/profile ${currImage}.png`;
             document.getElementsByTagName('body')[0].style.backgroundImage = `url('/images/rightContainer/${folder}/profile ${currImage}.png')`;
@@ -52,8 +47,19 @@ class Home extends Component {
         }, 5000)
 
         // Setting subscription
-        window.addEventListener('resize', this.manageDimention)
-        
+        window.addEventListener('resize', this.manageDimention(slideShow))
+    }
+
+    manageDimention(slideShow){
+        // Setting size of content container
+        let navbarHeight = document.getElementById('navbar').offsetHeight
+        let footerHeight = document.getElementById('footer').offsetHeight
+        document.getElementById('content').style.height = `${footerHeight - navbarHeight}px`;
+
+        if (document.getElementById('root').offsetWidth < 1000){
+            clearInterval(slideShow);
+            console.log(slideShow);
+        }
     }
 
     display(id, btn) {
