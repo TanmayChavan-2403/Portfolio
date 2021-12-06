@@ -1,7 +1,8 @@
 #p1{
-    visibility: visible;
-    opacity: 1;
     transition: .5s;
+    position: relative;
+    display: block;
+    height: 100%;
 }
 
 #img1{
@@ -74,6 +75,7 @@
     height: fit-content;
     /* background-color: #182137; */
     margin: auto auto;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -312,17 +314,15 @@
 
 /*  Media Query */
 @media screen and (max-width: 1000px){
-    .introduction{
-        font-size: 4vw;
-    }
 
+    
     .language{
         height: 60px;
     }
 
     .language p{
         width: 60%;
-        font-size: 3.5vw;
+        font-size: 18px;
     }
 
     .langIcon{

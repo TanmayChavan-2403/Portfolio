@@ -17,11 +17,24 @@ class Home extends Component {
         }
     };
 
+    manageDimention(){
+        // Setting size of content container
+        let navbarHeight = document.getElementById('navbar').offsetHeight
+        let footerHeight = document.getElementById('footer').offsetHeight
+        document.getElementById('content').style.height = `${footerHeight - navbarHeight}px`;
+    }
+
     componentDidMount(){
+
+        // Setting size of content container
+        let navbarHeight = document.getElementById('navbar').offsetHeight
+        let footerHeight = document.getElementById('footer').offsetHeight
+        document.getElementById('content').style.height = `${footerHeight - navbarHeight}px`;
+
+        // Code responsible for slideshow
         this.setState({
             divContainer: document.getElementById('p1'),
             btnContainer: document.querySelector('.intro'),
-            // containerImage: document.getElementById('img1'),
         })
         const folder = 'demonSlayer';
         const numOfImages = 16;
@@ -37,20 +50,21 @@ class Home extends Component {
                 currImage += 1
             }
         }, 5000)
+
+        // Setting subscription
+        window.addEventListener('resize', this.manageDimention)
         
     }
 
     display(id, btn) {
         if (this.state.divContainer) {
-            this.state.divContainer.style.visibility = 'hidden';
-            this.state.divContainer.style.opacity = '0';
+            this.state.divContainer.style.display = 'none';
             this.state.btnContainer.style.background = 'none';
             this.state.btnContainer.style.color = 'white';
         }
         const container = document.getElementById(`p${id}`);
         const button = document.querySelector(`.${btn}`);
-        container.style.visibility = 'visible';
-        container.style.opacity = '1';
+        container.style.display = 'block';
         button.style.background = '#232d48';
         button.style.color = '#ffcc29';         
 
@@ -83,7 +97,7 @@ class Home extends Component {
                         </section>
 
                         <section id='footer'>
-                            <div className='navbar'>
+                            <div id='navbar'>
                                 <div className='intro nav' onClick={() => this.display(1, 'intro')} >  <h2> Introduction </h2>  </div>
                                 <div className='hobbies nav' onClick={() => this.display(2, 'hobbies')}> <h2> Hobbies </h2>  </div>
                                 <div className='extracurr nav' onClick={() => this.display(3, 'extracurr')}> <h2> Certifications </h2> </div>
@@ -92,14 +106,12 @@ class Home extends Component {
                                 <div className='contact nav' onClick={() => this.display(6, 'contact')}><h2> Contact </h2></div>
                             </div>
 
-                            <div className='content'>
+                            <div id='content'>
+
                                 {/* Page 1 container */}
                                 <div className='pages' id='p1'>
                                     {<Intro> </Intro>}
                                 </div>
-                                {/* <div className='content-image' id='img1'>
-                                    <img src='images/introImage.png' ></img>
-                                </div> */}
 
                                 {/* Page 2 container */}
                                 <div className='pages' id='p2' >
@@ -107,6 +119,14 @@ class Home extends Component {
                                 </div>
                                 {/* <div className='content-image' id='img2'>
                                     <img src='images/hobby.png' ></img>
+                                </div> */}
+
+                                {/* Page 3 container */}
+                                <div className='pages' id='p3' >
+                                    {<Extracurr> </Extracurr>}
+                                </div>
+                                {/* <div className='content-image' id='img3'>
+                                    <img src='images/certification.png' ></img>
                                 </div> */}
 
                                 {/* Page 4 container */}
@@ -127,15 +147,7 @@ class Home extends Component {
                                 </div> */}
 
 
-                                {/* Page 3 container */}
-                                <div className='pages' id='p3' >
-                                    {<Extracurr> </Extracurr>}
-                                </div>
-                                {/* <div className='content-image' id='img3'>
-                                    <img src='images/certification.png' ></img>
-                                </div> */}
-
-
+                                
                                 {/* Page 6 container */}
                                 <div className='pages' id='p6'>
                                     {<Contact> </Contact>}

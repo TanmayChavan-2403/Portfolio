@@ -32,9 +32,10 @@ a{
 }
 
 #p6{
-    visibility: hidden;
-    opacity: 0;
     transition: .5s;
+    position: relative;
+    display: none;
+    height: 100%;
 }
 
 

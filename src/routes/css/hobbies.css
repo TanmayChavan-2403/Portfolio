@@ -33,9 +33,10 @@ font-family: 'Source Sans Pro', sans-serif; */
 }
 
 #p2{
-    visibility: hidden;
-    opacity: 0;
     transition: .5s;
+    position: relative;
+    display: none;
+    height: 100%;
 }
 
 #img2{
@@ -46,7 +47,7 @@ font-family: 'Source Sans Pro', sans-serif; */
 .hobby{
     /* border: 1px solid var(--border); */
     width: 85%;
-    height: fit-content;
+    height: 80px;
     position: relative;
     background-color: #182137;
     display: flex;
@@ -65,15 +66,16 @@ font-family: 'Source Sans Pro', sans-serif; */
 }
 
 .hobbyName{
+    position: relative;
     width: 90%;
     height: 100%;
-}
-
-.hobbyName h2{
+    display: flex;
+    align-items: center;
     color: rgb(241, 241, 241);
     font-family: 'Rubik', sans-serif;
-    padding: 25px;
 }
+
+
 
 
 
@@ -89,6 +91,19 @@ font-family: 'Source Sans Pro', sans-serif; */
     }
 
     .hobby{
-        font-size: 3vw;
+        font-size: 18px;
+        height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .hobby{
+        font-size: 12px;
+        height: 70px;
+    }
+
+    .hobbyIcon{
+        padding: 5px;
     }
 }

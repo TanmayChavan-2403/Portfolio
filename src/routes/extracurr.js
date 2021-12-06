@@ -13,28 +13,7 @@ class Extracurr extends Component{
         return (
             <div className='extracurrContainer'>
                 <div id = "certifications">
-                    <div id = 'badge-details'>
-                        <div className="bdg">
-                            <div class="badge-image">
-                                <img src="images/participation.png"></img>
-                            </div>
-                            <h2>
-                                Participation Badge
-                            </h2>
-                        </div>
-                        <div className="bdg">
-                            <div class="badge-image">
-                                <img src="images/completion.png"></img>
-                            </div>
-                            <h2>
-                                Completion Badge
-                            </h2>
-                        </div>
-                    </div>
-
-                    < div id = "certificates">
-                        
-                    </div>
+                    <h1> Will be updated soon... </h1>
                 </div>
             </div>
         )

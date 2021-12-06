@@ -11,6 +11,11 @@ class Projects extends Component {
     }
 
     toggleContainer(id, height) {
+        // Calculating height value for content container
+        let paragraphHeight = document.getElementsByClassName('projectContent')[id].offsetHeight + 70;
+        
+
+
         let arrow = document.querySelectorAll('.projectArrow')[id];
         let content = document.querySelectorAll('.prj')[id];
 
@@ -26,7 +31,7 @@ class Projects extends Component {
         }
         else {
             console.log('Its reaching here');
-            content.style.height = `${height}px`;
+            content.style.height = `${paragraphHeight}px`;
             arrow.style.transform = 'rotate(90deg)';
             this.setState({
                 toggled: [...this.state.toggled, id],
@@ -69,7 +74,7 @@ class Projects extends Component {
                         </div>
                     </div>
 
-                    <div className='fileRenamer prj'>
+                    <div className='fileRenamer prj' style={{height:'50px'}}>
                         <div className='projectIcon'>
                             <img src='images/programming.png'></img>
                         </div>
